@@ -33,7 +33,7 @@ $book10 = new Book(array('title' => 'Web Design with HTML, CSS, JavaScript and j
 
 $array = array($book1,$book2,$book3, $book4, $book5, $book6, $book7, $book8, $book9, $book10);
 
-echo json_encode($array, JSON_UNESCAPED_UNICODE|JSON_PRETTY_PRINT);
+echo json_encode($array, JSON_UNESCAPED_UNICODE);
 
 
 ?>
