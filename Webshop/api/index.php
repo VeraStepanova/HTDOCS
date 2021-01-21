@@ -15,7 +15,7 @@ class Book
         $this->price = $data['price'];
     }
 
-//
+//vera ändringar
 
 
 }
