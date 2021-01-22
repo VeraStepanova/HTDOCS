@@ -14,7 +14,7 @@ giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin=
 </head>
 <body class="container-fluid">
 <br><br>
-<h1 class='textcenter'>WEBSHOP BOOKS<a href="https://fakestoreapi.com/products"></a></h1>
+<h1 class='textcenter'>WEBSHOP BOOKS<a href=""></a></h1>
 <?php App::main(); ?>
 </body>
 </html>
