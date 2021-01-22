@@ -23,7 +23,7 @@ class App{
  }
  public static function viewDataW($products){
  $table = "<table class='table table-bordered'>";
- $table .= "<tr><th width='200'>Picture</th><th width='400'>Title</th><th>Description</th><th>Price EUR</th></tr>";
+ $table .= "<tr><th width='150'>Picture</th><th width='400'>Title</th><th>Description</th><th>Price</th></tr>";
  foreach ($products as $key => $value){
  $table .= "<tr>
  <td><img src='$value[image]' style='width:150px' 'height:150px' ></td>
