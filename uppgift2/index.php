@@ -27,7 +27,7 @@ include_once 'api/App.php';
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Welcome To Our Bookstore!</div>
+                <div class="masthead-subheading">Välkommen Till Vår Bokhandel!</div>
                 <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
             </div>
         </header>     
