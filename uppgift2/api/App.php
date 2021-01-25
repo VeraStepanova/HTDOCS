@@ -31,21 +31,22 @@ class App
         $table = "";
         foreach ($products as $key => $value) {
             $table .= "
-            <div>
-                <div class='timeline-heading'>
-                    <img -fluid' src='$value[image]' />
-                    <h4>$value[title]</h4>
-                    
-                </div>
-                <div class='timeline-body'><p class='text-muted'>$value[description]</p></div>
-                <h4 class='subheading'> Pris: $value[price]</h4>
-                    <h4 class='subheading'>Antal i lager:  $value[antal]</h4>
-                    <hr>
         
+            <div class= row align-items-center no-gutters mb-4 mb-lg-5>
+                    <div class= 'col-xl-3 col-lg-4'><img class='img-fluid mb-3 mb-lg-0' src=$value[image]></div>
+                    
+                    <div class='col-xl-9 col-lg-8'> 
+                    <h4>$value[title]</h4>                   
+                    <div class='timeline-body'><p class='text-muted'>$value[description]</p></div>
+                   
+                    <h5 class='subheading'> Pris: $value[price]</h5>
+                    <h5 class='subheading'>Antal i lager:  $value[antal]</h5>
+                    </div>
+
             </div>
-            ";
+
+                    <hr>";
         }
         echo $table;
-        
     }
 }
