@@ -38,8 +38,8 @@ class App
                     
                 </div>
                 <div class='timeline-body'><p class='text-muted'>$value[description]</p></div>
-                <h4 class='subheading'>$value[price]</h4>
-                    <h4 class='subheading'> $value[antal]</h4>
+                <h4 class='subheading'> Pris: $value[price]</h4>
+                    <h4 class='subheading'>Antal i lager:  $value[antal]</h4>
                     <hr>
         
             </div>
