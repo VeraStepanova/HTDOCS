@@ -40,13 +40,12 @@ include_once 'api/App.php';
                 </div>
                 
                 <ul>
-
-                    <li>
+                    
                        <?php
                        App::main();
                        ?>
 
-                    </li>                    
+                                        
                 </ul>
             </div>
         </section> 
