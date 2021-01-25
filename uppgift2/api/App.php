@@ -1,7 +1,10 @@
 <?php
+
+require_once 'api/book.php';
+
 class App
 {
-    public static $endpoint = "http://localhost/Webshop/api/";
+    public static $endpoint = "http://localhost/Webshop2/api/";
     public static function main()
     {
         try {
@@ -25,22 +28,21 @@ class App
     }
     public static function viewDataW($products)
     {
-        $table = "<table class='table table-bordered'>";
-        $table .= "<tr><th width='150'>Picture</th><th width='400'>Title</th><th>Description</th><th>Price</th><th>Antal</th></tr>";
+        $table = "";
         foreach ($products as $key => $value) {
-            $table .= "<tr>
- <td><img src='$value[image]' style='width:150px' 'height:150px' ></td>
- <td>$value[title]</td>
- <td>$value[description]</td>
- <td>$value[price]</td>
- <td>$value[antal]</td>
- </tr>";
+            $table .= ";
+            <div class='timeline-image'><img class='rounded-circle img-fluid' src='$value[image]' /></div>
+            <div class='timeline-panel'>
+                <div class='timeline-heading'>
+                    <h4>$value[title]</h4>
+                    <h4 class='subheading'>$value[price]</h4>
+                    <h4 class='subheading'> $value[antal]</h4>
+                </div>
+                <div class='timeline-body'><p class='text-muted'>$value[description]</p></div>
+            </div>
+            ";
         }
-        $table .= "</table>";
-        echo "<h1></h1>";
         echo $table;
-        echo "<br>";
-        "<br>";
-        "<br>";
+        
     }
 }
