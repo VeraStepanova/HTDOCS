@@ -30,15 +30,18 @@ class App
     {
         $table = "";
         foreach ($products as $key => $value) {
-            $table .= ";
-            <div class='timeline-image'><img class='rounded-circle img-fluid' src='$value[image]' /></div>
-            <div class='timeline-panel'>
+            $table .= "
+            <div>
                 <div class='timeline-heading'>
+                    <img -fluid' src='$value[image]' />
                     <h4>$value[title]</h4>
-                    <h4 class='subheading'>$value[price]</h4>
-                    <h4 class='subheading'> $value[antal]</h4>
+                    
                 </div>
                 <div class='timeline-body'><p class='text-muted'>$value[description]</p></div>
+                <h4 class='subheading'>$value[price]</h4>
+                    <h4 class='subheading'> $value[antal]</h4>
+                    <hr>
+        
             </div>
             ";
         }

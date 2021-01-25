@@ -27,20 +27,19 @@ include_once 'api/App.php';
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Welcome To Our Studio!</div>
+                <div class="masthead-subheading">Welcome To Our Bookstore!</div>
                 <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
             </div>
         </header>     
         <!-- About-->
         <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">Topplistan Data & IT</h2>
+                    <h3 class="section-subheading text-muted"></h3>
                 </div>
                 
-                <ul class="timeline">
+                <ul>
 
                     <li>
                        <?php
