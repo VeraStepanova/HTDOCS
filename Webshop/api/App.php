@@ -1,7 +1,5 @@
 <?php
 
-require_once 'api/book.php';
-
 class App
 {
     public static $endpoint = "http://localhost/Webshop2/api/";
