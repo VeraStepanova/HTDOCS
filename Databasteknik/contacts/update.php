@@ -32,15 +32,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = "<div class='alert alert-success' role='alert'>
                     <p>$rowCount rad har uppdaterats!</p>
                 </div>";  
-
-
-    // header("Location:index.php");
-
-    /*
-    echo "<hr><pre>";
-    print_r($_POST);
-    echo "</pre>";
-    */
     
 
 }

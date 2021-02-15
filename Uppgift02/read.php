@@ -23,15 +23,22 @@ foreach ($result as $key => $value) {
     class='col-xl-9 col-lg-8'> 
     <h4>$value[title]</h4>                                      
     <div class='timeline-body'><p class='text-muted'>$value[description]</p></div>        
-    <h5 class='subheading'> Pris: $value[price]</h5>
-    <button class='btn btn-primary btn-xl text-uppercase' id='sendMessageButton' type='submit>Send Message</button>
-    <button type='button'>Köp</button>
+    <h5 class='subheading'> Pris SEK: $value[price]</h5>
+    
+    <a href='order.php?id=$value[id]'
+    button class='btn btn-primary btn-xl text-uppercase' id='sendMessageButton' type='submit>
+    button type='button'>
+    Köp
+    </button>
+    </a>
+
     </div>
    
 </div> <hr>
     ";
 }
 
-$table .= "</table>";
+$table .= "</
+>";
 
 echo $table;

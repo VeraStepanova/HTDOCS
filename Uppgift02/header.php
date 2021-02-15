@@ -126,7 +126,7 @@ require_once 'database.php';
                         </div>
                     </div>
                     
-                </div>
+                </div> 
                 <div class="row">
                     <div class="col-lg-8 mx-auto text-center"><p class="large text-muted"></p></div>
                 </div>
