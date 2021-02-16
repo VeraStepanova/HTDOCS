@@ -10,6 +10,7 @@ try{
 $conn = new PDO($dbDSN, $dbUser, $dbPass);
  
  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+ 
 
 } 
 catch(PDOException $e){

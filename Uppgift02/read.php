@@ -12,7 +12,7 @@ $table = "";
 
 foreach ($result as $key => $value) {
 
-    $id = $value['id'];
+    $id = $value['book_id'];
 
     $table .= "
     <div class= row align-items-center no-gutters mb-4 mb-lg-5>
@@ -25,7 +25,7 @@ foreach ($result as $key => $value) {
     <div class='timeline-body'><p class='text-muted'>$value[description]</p></div>        
     <h5 class='subheading'> Pris SEK: $value[price]</h5>
     
-    <a href='order.php?id=$value[id]'
+    <a href='customer.php?id=$value[book_id]'
     button class='btn btn-primary btn-xl text-uppercase' id='sendMessageButton' type='submit>
     button type='button'>
     Köp
@@ -38,7 +38,6 @@ foreach ($result as $key => $value) {
     ";
 }
 
-$table .= "</
->";
+$table .= "</>";
 
 echo $table;
