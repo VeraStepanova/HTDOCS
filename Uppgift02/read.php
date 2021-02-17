@@ -23,7 +23,7 @@ foreach ($result as $key => $value) {
     class='col-xl-9 col-lg-8'> 
     <h4>$value[title]</h4>                                      
     <div class='timeline-body'><p class='text-muted'>$value[description]</p></div>        
-    <h5 class='subheading'> Pris SEK: $value[price]</h5>
+    <h5 class='subheading'> Pris: $value[price] kr</h5>
     
     <a href='customer.php?id=$value[book_id]'
     button class='btn btn-primary btn-xl text-uppercase' id='sendMessageButton' type='submit>

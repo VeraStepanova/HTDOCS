@@ -30,7 +30,7 @@ if (isset($_GET['id'])) {
     foreach ($result as $key => $value) {
         $id = $value['book_id'];
         $table .= "
-        <br><br><br>
+        <br><br>
         <div class= row align-items-center no-gutters mb-4 mb-lg-5>
         <div class= 'col-xl-3 col-lg-4'>    
         <img - fluid' src='$value[image]'></div>         
@@ -38,16 +38,14 @@ if (isset($_GET['id'])) {
         class='col-xl-9 col-lg-8'> 
         <h4>$value[title]</h4>                                      
         <div class='timeline-body'><p class='text-muted'>$value[description]</p></div>        
-        <h5 class='subheading'> Pris SEK: $value[price]</h5>
+        <h5 class='subheading'> Pris: $value[price] kr</h5>
         </div>
-
     </div> 
         ";
     }
     $table .= "</table>";
     echo $table;
 }
-
 
 // Hantera formuläret
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -72,39 +70,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bindParam(':book_id', $book_id);
     $stmt->execute();
 
-    $message = "<div class='alert alert-success' role='alert'>
-             <p> Tack $name! Din order har registrerats! </p>
-             </div>";
+    $order_id = $conn->lastInsertId();
+
+
+    header("Location: order.php?id=$order_id");
+
 }
 ?>
-
 
 <body class="container">
     <section class="page-section">
         <div class="container">
             <h2 class="section-heading text-uppercase">Beställningsförmulär</h2>
         </div>
-
         <form action="" method="post" class="row">
-            <div class="col-md-6 form-group">
+            <div class="col-md-7 form-group">
                 <input name="name" type="text" required class="form-control" placeholder="Namn">
-            </div>
+            </div> 
 
-            <div class="col-md-6 form-group">
+            <div class="col-md-7 form-group">
                 <input name="phone" type="phone" required class="form-control" placeholder="Telefonnummer">
             </div>
 
-            <div class="col-md-6 form-group">
+            <div class="col-md-7 form-group">
                 <input name="email" type="email" required class="form-control" placeholder="E-post">
             </div>
 
-            <div class="col-md-12 form-group">
+            <div class="col-md-9 form-group">
                 <textarea name="address" cols="30" rows="5" required class="form-control" placeholder="Leveransadress"></textarea>
             </div>
 
             <div class="col-md-4 form-group">
-                <input type="submit" value="Beställa" class='btn btn-primary btn-xl text-uppercase'>
-        
+                <input type="submit" value="Köp" 
+                class='btn btn-primary btn-xl text-uppercase'>
             </div>
         </form>
         </div>
@@ -113,11 +111,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 </html>
 
-<?php
-
-if (isset($message)) echo $message;
-
-?>
 
 
 
