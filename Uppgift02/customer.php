@@ -1,9 +1,13 @@
+<?php
+require_once ("header.php");
+?>
+
 <!doctype html>
 <html lang="sv">
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1 " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Beställningsförmulär</title>
@@ -84,15 +88,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h2 class="section-heading text-uppercase">Beställningsförmulär</h2>
         </div>
         <form action="" method="post" class="row">
-            <div class="col-md-7 form-group">
+            <div class="col-md-9 form-group">
                 <input name="name" type="text" required class="form-control" placeholder="Namn">
             </div> 
 
-            <div class="col-md-7 form-group">
+            <div class="col-md-9 form-group">
                 <input name="phone" type="phone" required class="form-control" placeholder="Telefonnummer">
             </div>
 
-            <div class="col-md-7 form-group">
+            <div class="col-md-9 form-group">
                 <input name="email" type="email" required class="form-control" placeholder="E-post">
             </div>
 
@@ -101,9 +105,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
 
             <div class="col-md-4 form-group">
-                <input type="submit" value="Köp" 
-                class='btn btn-primary btn-xl text-uppercase'>
+            <div><input type="submit" value="Köp" 
+                class="btn btn-primary btn-xl text-uppercase" >
+                </div>
             </div>
+           
         </form>
         </div>
     </section>
@@ -111,6 +117,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 </html>
 
+<?php
+require_once ("footer.php");
+echo "<br>";
+echo "<br>";
 
 
 

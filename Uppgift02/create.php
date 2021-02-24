@@ -20,14 +20,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bindParam(':email', $email);
     $stmt->bindParam(':message', $message);
     $stmt->execute();
-    $message = "<div class='alert alert-success' role='alert'>
+    $message = "<div class='alert  alert-success' role='alert'>
                     <p> Tack $name! Ditt meddelande har skickats! </p>
                 </div>";     
 }
 ?>
 
 
-<form action="#" method="post" class="row">
+<form action="#contact" id = "contactForm" name="sentMessage" novalidate="novalidate"  method="post" class="row">
 <div class="col-md-6 form-group">
             <input name="name" type="text" required
             class="form-control" placeholder="Namn">
